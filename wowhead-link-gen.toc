@@ -1,0 +1,6 @@
+## Interface: 70300
+## Author: cody35367
+## Title: Wowhead Link Gen
+## Notes: Generates wowhead.com links
+
+wowhead-link-gen.lua

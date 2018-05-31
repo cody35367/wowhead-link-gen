@@ -1,0 +1,5 @@
+<Bindings>
+    <Binding name="GENERATEWOWHEADURL" header="WLGADDON" category="ADDONS">
+        process_widget()
+    </Binding>
+</Bindings>
