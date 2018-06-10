@@ -2,11 +2,12 @@ BINDING_HEADER_WLGADDON = "Wowhead Link Gen"
 BINDING_NAME_GENERATEWOWHEADURL = "Generate Wowhead URL"
 local WOWHEAD_BASE_URL = "http://www.wowhead.com/"
 local WOWHEAD_QUEST_BASE_URL = WOWHEAD_BASE_URL.."quest="
+local WOWHEAD_QUEST_BASE_URL_POSTFIX = "#comments"
 
 function process_widget()
     local selected_frame=GetMouseFocus()
     if (selected_frame:GetName() == "ObjectiveTrackerBlocksFrameHeader") then
-        local full_url=WOWHEAD_QUEST_BASE_URL..selected_frame:GetParent().id
+        local full_url=WOWHEAD_QUEST_BASE_URL..selected_frame:GetParent().id..WOWHEAD_QUEST_BASE_URL_POSTFIX
         --print(full_url)
         StaticPopupDialogs["WLG-Copy-Popup"]={
             text="",
